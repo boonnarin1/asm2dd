@@ -38,8 +38,7 @@ void main(){
     }
 
     stdout.write('║ ▸ Play again? (Y/N): ');
-    print('');
-    print('╚════════════════════════════════════════════');
+
     var Y ='Y';
     var y = 'y';
     var n = 'n';
@@ -56,8 +55,9 @@ void main(){
       }
       else{
         stdout.write('║ ▸ Play again? (Y/N): ');
-        print('');
-        print('╚════════════════════════════════════════════');
+
+
+
         continue;
       }
     }
@@ -66,11 +66,12 @@ void main(){
     }
   }
   var len = myList.length;
-  print("You've play $len game");
+  print("║ ▸ You've play $len game");
   for(int i=0;i<myList.length;i++){
-    stdout.write('Game #${i+1}: ');
+    stdout.write('║ ▸ Game #${i+1}: ');
     stdout.write(myList[i]);
     print(" guess");
+    print('╚════════════════════════════════════════════');
   }
 
 }
