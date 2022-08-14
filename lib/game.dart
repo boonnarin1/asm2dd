@@ -7,8 +7,7 @@ class Game{
     var r = Random();
     answer = r.nextInt(maxRandom!)+1;
 
-  }
-
+  }//
   int doGuess(int num){
     if(num>answer){
       print('║▸ $num is Too high ');
